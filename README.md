@@ -124,7 +124,7 @@ jupyter lab
 ### Visual Studio Code
 
 1. Abrir la carpeta raíz del proyecto en Visual Studio Code.
-2. Abrir el archivo `.ipynb` ubicado en `notebooks/`.
+2. Abrir el archivo `.ipynb` ubicado en `src/`.
 3. Seleccionar el intérprete de Python correspondiente al entorno virtual `.venv`.
 4. Seleccionar el kernel correspondiente.
 5. Ejecutar las celdas en orden.
