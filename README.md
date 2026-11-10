@@ -15,7 +15,7 @@ FCDD-TP-ENFR2018/
 │
 │
 ├── src/
-│   └── TPE_FCDD.py
+│   └── TPE_FCDD.ipynb
 │
 ├── data/
 │   ├── raw/
@@ -120,14 +120,8 @@ También se puede utilizar JupyterLab:
 jupyter lab
 ```
 
-Desde el navegador:
 
-1. Navegar hasta la carpeta `notebooks/`.
-2. Abrir `ENFR2018_Codigos.ipynb`.
-3. Seleccionar el kernel de Python correspondiente al entorno virtual.
-4. Ejecutar las celdas en orden secuencial, desde la primera hasta la última.
-
-### Opción B: Visual Studio Code
+### Visual Studio Code
 
 1. Abrir la carpeta raíz del proyecto en Visual Studio Code.
 2. Abrir el archivo `.ipynb` ubicado en `notebooks/`.
