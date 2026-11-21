@@ -13,24 +13,22 @@ FCDD-TP-ENFR2018/
 ├── requirements.txt
 ├── .gitignore
 │
-│
 ├── src/
 │   └── TPE_FCDD.ipynb
 │
 ├── data/
-│   ├── raw/
-│   │   └── ENFR2018_baseusuario.zip
+│   └── ENFR2018/
+│       └── ENFR 2018 - Base usuario.txt
 │
 └── informe/
-    ├── TPE_FUNDAMENTOS.docx
-    
+    └── TPE_FUNDAMENTOS_REENTREGA.docx
 ```
 
 **Descripción de las carpetas:**
 
-- `src/`: contiene los archivos Python desarrollados en Visual Studio Code.
-- `data/raw/`: contiene el conjunto de datos original.
-- `informe/`: contiene el informe final del trabajo práctico.
+- `src/`: contiene el notebook desarrollado para el análisis.
+- `data/ENFR2018/`: contiene la base de datos utilizada.
+- `informe/`: contiene el informe académico del trabajo práctico.
 
 ## 2. Requisitos previos
 
@@ -38,10 +36,8 @@ Para ejecutar el proyecto se necesita:
 
 - Python 3 instalado.
 - pip, el gestor de paquetes de Python.
-- Jupyter Notebook o JupyterLab, o Visual Studio Code con soporte para notebooks.
-- Los archivos del proyecto, incluyendo el conjunto de datos original.
-
-El archivo `ENFR2018_baseusuario.zip` debe estar ubicado en `data/raw/`. El notebook utiliza una ruta relativa para localizarlo.
+- Jupyter Notebook, JupyterLab o Visual Studio Code con soporte para notebooks.
+- Los archivos del proyecto, incluyendo la base de datos.
 
 ## 3. Instalación del entorno
 
@@ -83,15 +79,13 @@ Una vez activado el entorno, actualizar pip:
 python -m pip install --upgrade pip
 ```
 
-Instalar las dependencias del proyecto:
+Instalar las dependencias:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
 ## 4. Dependencias utilizadas
-
-Las principales bibliotecas utilizadas en el proyecto son:
 
 | Biblioteca | Uso |
 |---|---|
@@ -106,7 +100,7 @@ Las versiones de las dependencias se encuentran especificadas en `requirements.t
 
 ## 5. Ejecución del proyecto
 
-### Opción A: Jupyter Notebook
+### Jupyter Notebook
 
 Con el entorno virtual activado, ejecutar:
 
@@ -120,28 +114,25 @@ También se puede utilizar JupyterLab:
 jupyter lab
 ```
 
-
 ### Visual Studio Code
 
 1. Abrir la carpeta raíz del proyecto en Visual Studio Code.
-2. Abrir el archivo `.ipynb` ubicado en `src/`.
-3. Seleccionar el intérprete de Python correspondiente al entorno virtual `.venv`.
+2. Abrir `src/TPE_FCDD.ipynb`.
+3. Seleccionar el intérprete de Python correspondiente al entorno virtual.
 4. Seleccionar el kernel correspondiente.
 5. Ejecutar las celdas en orden.
 
-**Importante:** se recomienda ejecutar las celdas secuencialmente, ya que algunas utilizan variables y resultados generados en celdas anteriores.
+Se recomienda ejecutar las celdas secuencialmente, ya que algunas utilizan variables y resultados generados en celdas anteriores.
 
 ## 6. Datos utilizados
 
-El proyecto utiliza la base de datos usuario de la **Encuesta Nacional de Factores de Riesgo 2018**, publicada por el Instituto Nacional de Estadística y Censos (INDEC).
+El proyecto utiliza la base de datos de usuarios de la **Encuesta Nacional de Factores de Riesgo 2018**, publicada por el Instituto Nacional de Estadística y Censos (INDEC).
 
-El archivo original se encuentra comprimido en:
+El archivo utilizado se encuentra en:
 
 ```text
-data/raw/ENFR2018_baseusuario.zip
+data/ENFR2018/ENFR 2018 - Base usuario.txt
 ```
-
-El notebook contempla la descompresión del archivo para acceder a los datos utilizados durante el análisis.
 
 ## 7. Tecnologías utilizadas
 
@@ -155,7 +146,7 @@ El notebook contempla la descompresión del archivo para acceder a los datos uti
 - Scikit-learn
 - Yellowbrick
 
-## 8. Informe final
+## 8. Informe
 
 El informe académico contiene el desarrollo del análisis exploratorio, las dimensiones estudiadas, las hipótesis planteadas, las visualizaciones y las conclusiones obtenidas.
 
